@@ -1,5 +1,6 @@
-<button class= "btn btn-primary" [disabled]="allowedNewServer">Add Server</button>
-<p [innerText]="allowedNewServer"> </p>
+<button class= "btn btn-primary" (click)="onCreateServer()" [disabled]="allowedNewServer">Add Server</button>
+<button (click)="onRemoveServer()"> Click to remove Server </button>
+<p> {{serverCreationStatus}} </p>
 
 
 
