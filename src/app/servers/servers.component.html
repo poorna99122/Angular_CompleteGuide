@@ -8,10 +8,10 @@
 <!-- <p> {{serverCreationStatus}} </p> -->
     
 <!-- <button (click)="onRemoveServer()"> Click to remove Server </button> -->
-<p *ngIf="serverCreated; else noServer">Server was created, serverName is {{ serverName }}</p>
-<ng-template #noServer >
+<p *ngIf="serverCreated">Server was created, serverName is {{ serverName }}</p>
+<!-- <ng-template #noServer >
     <p> No server was created </p>
-</ng-template>
+</ng-template> -->
 
-<!-- <app-server></app-server>
-<app-server></app-server> -->
+<app-server></app-server>
+<app-server></app-server>
