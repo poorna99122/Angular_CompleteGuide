@@ -2,11 +2,12 @@
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
 
-<p>Server Name is {{serverName}}</p>
+<!-- <p>Server Name is {{serverName}}</p> -->
 <br>
 <button class="btn btn-primary" (click)="onCreateServer()" [disabled]="allowedNewServer">Add Server</button>
-<p> {{serverCreationStatus}} </p>
+<!-- <p> {{serverCreationStatus}} </p> -->
     
-<button (click)="onRemoveServer()"> Click to remove Server </button>
+<!-- <button (click)="onRemoveServer()"> Click to remove Server </button> -->
+<p *ngIf="serverCreated">Server was created, serverName is {{ serverName }}</p>
 <!-- <app-server></app-server>
 <app-server></app-server> -->
