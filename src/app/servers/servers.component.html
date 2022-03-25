@@ -13,5 +13,7 @@
     <p> No server was created </p>
 </ng-template> -->
 
-<app-server></app-server>
-<app-server></app-server>
+
+<!-- Adding array of servers which adds dynamically  -->
+<app-server *ngFor="let server of servers"></app-server>
+
