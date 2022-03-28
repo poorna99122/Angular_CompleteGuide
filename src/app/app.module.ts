@@ -8,6 +8,11 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 // import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
@@ -15,7 +20,14 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     ServerComponent,
     ServersComponent,
-    HeaderComponent
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+
+
     
   ],
   imports: [
