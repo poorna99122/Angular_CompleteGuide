@@ -1,7 +1,11 @@
+import { EventEmitter } from '@angular/core';
 import { Recipe } from "./recipe.model";
 
-export class RecipeService {
 //Recipe Service is the place in our app where we manage our recipes
+export class RecipeService {
+
+    //We are declaring an event here in services instead of sending data from recipe-item to recipe-list to recipes to recipe-details component
+    recipeSelected = new EventEmitter<Recipe>();
 
 private recipes: Recipe[] = [
     new Recipe('Biryani','Biryani is one of the most popular dishes in South Asia, as well as among the diaspora from the region. ','https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Biryani_of_Lahore.jpg/220px-Biryani_of_Lahore.jpg'),
