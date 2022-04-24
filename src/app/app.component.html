@@ -1,22 +1,12 @@
-<!-- <div class="container" >
-  <div class="row">
-    <div class="col-xs-6">
-      <h3>Server Maintanence</h3>  
-      <hr>
-      <app-servers ></app-servers>
-    </div>
-  </div>
-</div>
- -->
-<!-- Shopping list app creation starts  -->
+
 
 <app-header (featureSelected)="onNavigate($event)"> </app-header>
 
  <div class="container">
    <div class="row">
      <div class="col-md-12">
-       <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
-       <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+       <app-recipes *ngIf="loadedFeature === 'recipes'"></app-recipes>
+       <app-shopping-list *ngIf="loadedFeature !== 'recipes'"></app-shopping-list>
      </div>
    </div>
  </div>
